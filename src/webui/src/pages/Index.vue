@@ -9,7 +9,7 @@
 
     <!-- Filters on top -->
     <div class="row justify-start q-gutter-sm" data-v-step="2">
-      <q-input filled dense style="width: 150px" v-model="name" label="Name" />
+      <q-input filled dense style="width: 150px" v-model="name" label="名字" />
       <q-input
         filled
         dense
@@ -18,7 +18,7 @@
         type="number"
         :min="min"
         :max="max"
-        label="Min level"
+        label="最低等級"
       />
       <q-input
         filled
@@ -28,14 +28,14 @@
         type="number"
         :min="min"
         :max="max"
-        label="Max level"
+        label="最高等級"
       />
 
       <q-select
         filled
         dense
         options-dense
-        label="Size"
+        label="體型"
         v-model="size"
         multiple
         input-debounce="0"
@@ -49,7 +49,7 @@
         filled
         dense
         options-dense
-        label="Family"
+        label="種族"
         v-model="family"
         use-chips
         multiple
@@ -63,7 +63,7 @@
         filled
         dense
         options-dense
-        label="Trait"
+        label="特徵"
         v-model="trait"
         use-chips
         multiple
@@ -77,7 +77,7 @@
         filled
         dense
         options-dense
-        label="Creature type"
+        label="生物種類"
         v-model="creature_type"
         use-chips
         multiple
@@ -91,7 +91,7 @@
         filled
         dense
         options-dense
-        label="Aligment"
+        label="陣營"
         v-model="alignment"
         use-chips
         multiple
@@ -105,7 +105,7 @@
         filled
         dense
         options-dense
-        label="Rarity"
+        label="稀有度"
         v-model="rarity"
         use-chips
         multiple
@@ -122,7 +122,7 @@
         style="width: 150px"
         type="number"
         min="1"
-        label="Party size"
+        label="隊伍大小"
         v-model="partySize"
       />
       <q-input
@@ -131,7 +131,7 @@
         style="width: 150px"
         type="number"
         min="1"
-        label="Party level"
+        label="隊伍等級"
         v-model="partyLevel"
       />
     </div>
@@ -155,7 +155,7 @@
             }"
             color="light-green"
             text-color="black"
-            :label="'Trivial ' + xpBudget[0]"
+            :label="'微不足道 ' + xpBudget[0]"
           />
           <q-badge
             :style="{
@@ -165,7 +165,7 @@
             }"
             color="lime"
             text-color="black"
-            :label="'Low ' + xpBudget[1]"
+            :label="'低度 ' + xpBudget[1]"
           />
           <q-badge
             :style="{
@@ -175,7 +175,7 @@
             }"
             color="amber"
             text-color="black"
-            :label="'Moderate ' + xpBudget[2]"
+            :label="'中等 ' + xpBudget[2]"
           />
           <q-badge
             :style="{
@@ -185,7 +185,7 @@
             }"
             color="orange"
             text-color="black"
-            :label="'Severe ' + xpBudget[3]"
+            :label="'嚴重 ' + xpBudget[3]"
           />
           <q-badge
             :style="{
@@ -195,7 +195,7 @@
             }"
             color="deep-orange"
             text-color="black"
-            :label="'Extreme ' + xpBudget[4]"
+            :label="'極端 ' + xpBudget[4]"
           />
         </div>
       </q-linear-progress>
@@ -212,7 +212,7 @@
       <div class="col">
         <div class="column">
           <q-banner dense class="text-white" style="background: #581911">
-            Total Encounter cost: {{ xpCost }}
+            總遭遇預算: {{ xpCost }}
           </q-banner>
           <q-virtual-scroll
             data-v-step="3"
@@ -260,7 +260,7 @@
                   <q-btn-group unelevated flat>
                     <q-btn
                       flat
-                      label="Weak"
+                      label="弱化"
                       size="15px"
                       :color="item.variant === 1 ? 'orange' : 'grey-4'"
                       padding="xs"
@@ -268,7 +268,7 @@
                     />
                     <q-btn
                       flat
-                      label="Base"
+                      label="正常"
                       size="15px"
                       :color="item.variant === 0 ? 'primary' : 'grey-4'"
                       padding="xs"
@@ -276,7 +276,7 @@
                     />
                     <q-btn
                       flat
-                      label="Elite"
+                      label="精英"
                       size="15px"
                       :color="item.variant === 2 ? 'deep-orange' : 'grey-4'"
                       padding="xs"

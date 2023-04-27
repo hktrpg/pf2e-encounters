@@ -12,12 +12,12 @@
           <q-avatar data-v-step="0" size="lg" square>
             <img src="~assets/stabbed-note.png" alt="logo" />
           </q-avatar>
-          Pathfinder 2e Encounter builder
+          Pathfinder 2e 遭遇建構器
         </q-toolbar-title>
         <q-space />
         <div style="transform: translate(-55px)">
-          <q-btn unelevated label="Tour" @click="startTour" />
-          <q-btn unelevated label="License info" @click="showLicense = true" />
+          <q-btn unelevated label="使用教學" @click="startTour" />
+          <q-btn unelevated label="授權資訊" @click="showLicense = true" />
         </div>
         <octocat />
       </q-toolbar>

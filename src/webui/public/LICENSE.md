@@ -1,3 +1,7 @@
+# 感謝
+
+本網站是 使用 <https://maxiride.github.io/pf2e-encounters/> 作正體中文化
+
 # Disclaimer
 
 The following refers to all external content which the website uses, namely all the content of the file `creatures.json` found in the project root which is used to populate all the data.

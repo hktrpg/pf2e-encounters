@@ -24,7 +24,7 @@
           outlined
           dense
           options-dense
-          display-value="Show\Hide columns"
+          display-value="顯示/隱藏欄"
           emit-value
           map-options
           :options="columns"
@@ -73,7 +73,7 @@ export default {
       columns: [
         {
           name: "name",
-          label: "Name",
+          label: "名字",
           align: "left",
           field: "name",
           sortable: true,
@@ -81,35 +81,35 @@ export default {
         },
         {
           name: "level",
-          label: "Level",
+          label: "等級",
           field: "level",
           sortable: true,
           required: true,
         },
         {
           name: "size",
-          label: "Size",
+          label: "體型",
           field: "size",
           sortable: true,
           align: "left",
         },
         {
           name: "family",
-          label: "Family",
+          label: "種族",
           field: "family",
           sortable: true,
           align: "left",
         },
         {
           name: "alignment",
-          label: "Alignment",
+          label: "陣營",
           field: "alignment",
           sortable: true,
           align: "left",
         },
         {
           name: "creature_type",
-          label: "Creature Type",
+          label: "生物種類",
           field: "creature_type",
           sortable: true,
           align: "left",
@@ -117,7 +117,7 @@ export default {
         },
         {
           name: "traits",
-          label: "Traits",
+          label: "特徵",
           field: "traits",
           sortable: false,
           align: "left",
